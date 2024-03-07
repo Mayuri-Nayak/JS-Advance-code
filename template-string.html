@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-string/ Template-literals</title>
+    <script>
+       /* let user = "Tanu Nayak";
+        document.write("Hello" + user); //(using concatenation) */
+
+        /*let user = "Mayuri Nayak";
+        document.write(`Hello ${user} welcome to India`); //(using Template String)*/
+
+        /*let user = "Tanu Nayak";
+        let marks = 99.99;
+        document.write(`Hello "${user}" your marks is ${99.99}%`); */
+
+        let firstName = "Mayuri";
+        let lastName = "Nayak";
+        function fullname(firstName, lastName){
+            return `${firstName} ${lastName}`;
+        }
+        let hello = `Hello ${fullname(firstName,lastName)}`;
+        console.log(hello);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

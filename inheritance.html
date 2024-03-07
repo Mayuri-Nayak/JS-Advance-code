@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+    <script>
+
+        /*class employee{
+            constructor(){
+                console.log("constructor: employee");
+            }
+        }
+        class manager extends employee{
+
+        }
+        let a = new manager();*/
+
+
+
+        class employee {
+            constructor(name, age, salary) {
+                this.empname = name;
+                this.empage = age;
+                this.empsalary = salary;
+                console.log("Constructor : Employee");
+            }
+            info() {
+                document.write(`<h3>Employee Class</h3>
+                                name : ${this.empname} <br>
+                                age : ${this.empage} <br>
+                                salary : ${this.empsalary} <br>`)
+            }
+        }
+        class manager extends employee {
+            info() {
+                let ta = 1000;
+                let pa = 500;
+                let totalsalary = this.empsalary + ta + pa;
+
+                document.write(`<h3>Manager Class</h3>
+                                name : ${this.empname} <br>
+                                age : ${this.empage} <br>
+                                salary : ${totalsalary} <br>`)
+
+
+            }
+
+        }
+        let a = new manager("Tanu ", 22, 34567890);
+        let b = new employee("Mayuri", 22, 1000);
+        a.info();
+        b.info();
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

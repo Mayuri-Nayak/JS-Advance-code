@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spread-operator</title>
+    <script>
+        /* function sum(name,...args){  //rest operator is used when we have to declare the operator
+            console.log(arguments);
+            document.write(`Helloo ${name} : `);
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+            document.write(sum);
+        }
+        var arr = [20,30,40];
+        sum("yahoo baba",...arr); *///spread operator is used to spread array and it is used when calling the operator.
+        
+
+        /*var arr1 = [10, 20, 30, 40];
+         var arr2 = [...arr1]; //here when we used spread operator it will copy previous value only.
+         arr1.push(50);           
+
+         console.log(arr1);
+         console.log(arr2);*/
+
+
+       /*var arr1 = [10,20,30,40];
+        var arr2 = [50,60];
+        var arr3 = [...arr1, ...arr2];
+        console.log(arr3);*/
+
+        var obj1 = {
+            name : " Mayuri Nayak",
+            course : "MCA",
+        };
+        var obj2 = {
+            age : 22
+        };
+        var obj3 = {...obj1,...obj2}; 
+        console.log(obj3);
+
+        //we can use spread operator in object and array.
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

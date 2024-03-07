@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rest Operator</title>
+    <script>
+
+        /*function sum(){
+            console.log(arguments);
+            
+            let sum = 0;
+            for(let i in arguments){
+                sum += arguments[i];
+            }
+
+            document.write(sum + "<br>");
+        }
+        sum(20,30,40);
+        sum(20,30);*/
+
+
+        function sum(name,course, ...args){   //rest operator ...args( rest operator unko array me convert krdeta hai jisse loop chalakr hum usko add krsakte hai.)
+            console.log(arguments);
+             
+            document.write(`Hello ${name} of ${course} : `);
+
+            let sum = 0;
+            for(let i in args){
+                sum += args[i];
+            }
+
+            document.write(sum +"<br>");
+        }
+        sum("Tanu Nayak","MCA",20,30,40);  
+        sum("Mayuri Nayak","MCA", 55,44);
+        
+    </script>
+</head>
+
+<body>
+    
+</body>
+</html>

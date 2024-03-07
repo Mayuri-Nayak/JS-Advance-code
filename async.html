@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async </title>
+    <script>
+         async function test(){ //----1st method
+            return "Hello Tanushri !";
+        }
+        test(). then (( result  ) => {
+            console.log(result);
+        });
+
+
+
+        let data = async function(){  //-----2nd method
+            return "Good Morning ";
+        }
+        data().then((result) => {
+            console.log(result);
+        });
+
+        
+
+
+        let page = async () =>  "Good Night ";  //-----3rd method
+        page().then((result) => {
+            console.log(result);
+        })
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

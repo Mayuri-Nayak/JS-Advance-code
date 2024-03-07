@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oop classes</title>
+    <script>
+
+        class hello{  //------> class
+            message(){  //---------> method
+                console.log("Hello GoodMorning Everyone");
+            }
+            sorry(){
+                console.log("Sorry for Mistake");
+            }
+        }
+        let a = new hello();//--------> object
+        a.message();
+        a.sorry();
+
+       
+        class lion{        //--------> constructor method
+            constructor(){
+                console.log("Its a constructor.");
+            }
+        }
+        let b = new lion(); 
+
+
+
+        class student{     //------------> constructor method with prototype function
+            constructor(){
+                let name;
+                console.log("constructor function");
+            }
+            hello(){
+                console.log("Hello  "  + this.name);
+            }
+        }
+        let c = new student();
+        c.name = "Tanu Nayak";
+        c.hello();
+
+
+
+        class tanu{  //-------> constructor method with argument pass
+            constructor(name,age){
+                this.tanuname = name;
+                this.tanuage = age;
+                console.log("constructor function");
+            }
+            hello(){
+                console.log("Hello " + this.tanuname + "  Your Age Is " + this.tanuage);
+            }
+        }
+        let d = new tanu("Tanushri Nayak", 22);
+        let e = new tanu("Mayuri Nayak", 22);
+        d.hello();
+        e.hello();
+
+
+
+        class mayu{    //---------> static method
+            static staticmethod(){
+                console.log("static-function");
+            }
+        }
+        mayu.staticmethod();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

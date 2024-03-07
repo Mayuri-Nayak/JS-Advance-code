@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-literals</title>
+    <script>
+
+        /*let name = "Mayuri Nayak";
+        let course = "MCA";
+
+        var obj = {  
+             name,
+             course,
+        };//object literals(we can write it once if property and assign value name is same.)
+        console.log(obj);*/
+
+        
+       /* let n = "student";
+        var obj = {
+            [n + "name"] : "Tanu Nayak", //property ke jagah variable ko call
+            course : "MCA",
+            detail : function(){
+                return `${this.studentname} is student of ${this.course}`
+            }
+        };
+        console.log(obj);
+        console.log(obj.detail());*/
+
+
+         
+       /* let n = "student";
+        var obj = {
+            [n + "name"] : "Tanu Nayak", //property ke jagah variable ko call
+            course : "MCA",
+            'detail show'(){
+                return `${this.studentname} is student of ${this.course}`
+            }
+        };
+        console.log(obj);
+        console.log(obj['detail show']()); */
+
+
+        let fname = "Tanu";
+        let lname = "Nayak";
+        let course = "MCA";
+         function student(fname, lname, course){
+            let fullname = fname + " " + lname;
+            return {fullname , course};
+         }
+         console.log(student(fname, lname, course));
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
